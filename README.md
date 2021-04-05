@@ -16,4 +16,4 @@ This is an excellent developer experience as you can quickly iterate locally, th
 
 ## Future Dev
 As I learn more about machine learning I'll be deploying my inference models from here, the CI/CD offered with SAM is very good.
-Next step is to convert the models to C++ for production deploymit.
+Next step is to convert the models to C++ for production deployment.
