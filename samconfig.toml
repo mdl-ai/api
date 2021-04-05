@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "dog-breed"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-27ce7kqf4qp7"
+s3_prefix = "dog-breed"
+region = "ap-southeast-2"
+capabilities = "CAPABILITY_IAM"
+image_repositories = ["DogBreedFunction=799166840327.dkr.ecr.ap-southeast-2.amazonaws.com/mdlai-classify"]
