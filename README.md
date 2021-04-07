@@ -7,7 +7,7 @@ Experimental for using Lambda to start up a docker container, this was only made
 Once the docker container is running latency is excellent (double digit millisecond), however it has a long 'cold start' time while it pulls the docker image down, if left idle for over 45 minutes it will dissapear from the cache leaving a user with a long 'cold-start' time again.
 
 ## Provisioned Lambda
-AWS continues to impress, you can now provision lambdas to always be active, in addition to starting new ones when required. This effectively removes the cold start issue and completely negates the only weakness of running docker containers in Lambdas. It used to be a trade off deciding between container based services like Kubernetes / Fargate or serverless architechtures, I think this methodolgy will quickly become the standard as more people become aware of the benefits.
+You can now provision lambdas to always be active, in addition to starting new ones when required. This effectively removes the cold start issue and completely negates the only weakness of running docker containers in Lambdas. It used to be a trade off deciding between container based services like Kubernetes / Fargate or serverless architechtures, I think this methodolgy will quickly become the standard as more people become aware of the benefits.
 
 ## Fast API
 Fast API is great for fast development and quick debugging, I've been experimenting with using API Gateway as a proxy to the Lambda, and having FastAPI deal with all the routing inside the Lambda.
