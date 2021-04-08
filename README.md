@@ -1,7 +1,7 @@
 # MDL.AI API
 
 ## Purpose
-This project is open source so it can be used as a learning resource for others as I find the cheapest methods possible for deploying machine learning models, currently I'm using Lambda to start a docker cotnainer so it can remain within free tier on AWS.
+This project is open source so it can be used as a learning resource for others as I find the cheapest methods possible for deploying machine learning models, currently I'm using Lambda to start a docker container so it can remain within free tier on AWS.
 
 ## Cold starts
 Once the docker container is running latency is excellent (double digit millisecond), however it has a long 'cold start' time while it pulls the docker image down, if left idle for over 45 minutes it will dissapear from the cache leaving a user with a long 'cold-start' time again.
